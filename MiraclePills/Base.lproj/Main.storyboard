@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="MainView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -131,6 +131,19 @@
                                     <action selector="buyNowButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yPV-c7-WHd"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eS6-Rr-nHO" userLabel="SuccessView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="kIV-hb-bmg">
+                                        <rect key="frame" x="97" y="243.5" width="180" height="180"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="kIV-hb-bmg" firstAttribute="centerY" secondItem="eS6-Rr-nHO" secondAttribute="centerY" id="EXn-tW-bdV"/>
+                                    <constraint firstItem="kIV-hb-bmg" firstAttribute="centerX" secondItem="eS6-Rr-nHO" secondAttribute="centerX" id="w2y-Na-R0l"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -139,6 +152,7 @@
                             <constraint firstItem="oZc-yb-mgn" firstAttribute="trailing" secondItem="3Ot-S4-Fb6" secondAttribute="trailing" id="7h4-YH-T8W"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iOP-hY-Xov" secondAttribute="trailing" constant="20" id="7tq-Sk-y4a"/>
                             <constraint firstItem="zoZ-PM-B6F" firstAttribute="leading" secondItem="9Y8-GK-PYT" secondAttribute="leading" id="8Zt-fG-BK1"/>
+                            <constraint firstItem="eS6-Rr-nHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="97o-Lb-O3W"/>
                             <constraint firstItem="3Ot-S4-Fb6" firstAttribute="trailing" secondItem="3CG-q9-tM7" secondAttribute="trailing" id="9hl-Hn-0do"/>
                             <constraint firstItem="3CG-q9-tM7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="BDE-l4-b5I"/>
                             <constraint firstItem="Us0-fP-hcn" firstAttribute="top" secondItem="FML-Od-74v" secondAttribute="bottom" constant="8" id="Bhm-Vu-fdA"/>
@@ -146,6 +160,7 @@
                             <constraint firstItem="zoZ-PM-B6F" firstAttribute="trailing" secondItem="9Y8-GK-PYT" secondAttribute="trailing" id="CBf-Ud-H03"/>
                             <constraint firstItem="UVN-jq-ACy" firstAttribute="top" secondItem="nhg-ex-fAJ" secondAttribute="bottom" constant="3" id="DGV-4U-NOJ"/>
                             <constraint firstItem="7EF-Os-oAk" firstAttribute="top" secondItem="Ync-la-Iw6" secondAttribute="bottom" constant="3" id="E8j-ML-J6q"/>
+                            <constraint firstItem="eS6-Rr-nHO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="F7u-Z0-l3a"/>
                             <constraint firstItem="Tb4-xp-b7s" firstAttribute="top" secondItem="bZ0-M8-mFM" secondAttribute="bottom" constant="3" id="FfX-aA-HUf"/>
                             <constraint firstItem="UVN-jq-ACy" firstAttribute="leading" secondItem="nhg-ex-fAJ" secondAttribute="leading" id="HnZ-B0-yTU"/>
                             <constraint firstItem="oZc-yb-mgn" firstAttribute="top" secondItem="3Ot-S4-Fb6" secondAttribute="bottom" constant="3" id="IEm-bm-K0l"/>
@@ -178,10 +193,12 @@
                             <constraint firstItem="xov-4g-MNr" firstAttribute="top" secondItem="UVN-jq-ACy" secondAttribute="bottom" constant="8" id="ia5-NH-AaN"/>
                             <constraint firstItem="amw-sy-Epc" firstAttribute="centerX" secondItem="Tb4-xp-b7s" secondAttribute="centerX" id="j9O-Fg-bkC"/>
                             <constraint firstItem="bZ0-M8-mFM" firstAttribute="trailing" secondItem="zoZ-PM-B6F" secondAttribute="trailing" id="kWj-Dr-Qi3"/>
+                            <constraint firstItem="eS6-Rr-nHO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kii-pd-ayQ"/>
                             <constraint firstItem="zoZ-PM-B6F" firstAttribute="top" secondItem="9Y8-GK-PYT" secondAttribute="bottom" constant="3" id="l74-zQ-SW5"/>
                             <constraint firstItem="9Y8-GK-PYT" firstAttribute="top" secondItem="Dab-KD-gQk" secondAttribute="bottom" constant="2" id="nvn-2H-eZk"/>
                             <constraint firstItem="Tb4-xp-b7s" firstAttribute="leading" secondItem="bZ0-M8-mFM" secondAttribute="leading" id="ouz-We-2zl"/>
                             <constraint firstItem="Ync-la-Iw6" firstAttribute="trailing" secondItem="oZc-yb-mgn" secondAttribute="trailing" id="p67-SJ-sVM"/>
+                            <constraint firstItem="eS6-Rr-nHO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="pch-Rz-SXW"/>
                             <constraint firstItem="nhg-ex-fAJ" firstAttribute="trailing" secondItem="7EF-Os-oAk" secondAttribute="trailing" id="sga-tf-dsR"/>
                             <constraint firstItem="Ync-la-Iw6" firstAttribute="top" secondItem="oZc-yb-mgn" secondAttribute="bottom" constant="8" id="vTg-1Z-7Y8"/>
                             <constraint firstItem="xov-4g-MNr" firstAttribute="trailing" secondItem="UVN-jq-ACy" secondAttribute="trailing" id="wnX-wK-mQO"/>
@@ -191,15 +208,17 @@
                         <outlet property="buyNowButton" destination="amw-sy-Epc" id="FHV-j0-HLC"/>
                         <outlet property="statePicker" destination="iOP-hY-Xov" id="C1e-MQ-BNq"/>
                         <outlet property="stateSelectButton" destination="Dab-KD-gQk" id="iOs-hT-XUI"/>
+                        <outlet property="successView" destination="eS6-Rr-nHO" id="UHd-2l-b2A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981.60000000000002" y="-102.09895052473765"/>
+            <point key="canvasLocation" x="1548" y="-120.98950524737631"/>
         </scene>
     </scenes>
     <resources>
         <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>

@@ -13,10 +13,12 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var stateSelectButton: UIButton!
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var buyNowButton: UIButton!
+    @IBOutlet weak var successView: UIView!
     
     let states = ["Uttar Pradesh", "Madhya Pradesh", "Andhra Pradesh", "Arunachal Pradesh", "Gujrat"]
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         statePicker.dataSource = self
         statePicker.delegate = self
@@ -46,7 +48,7 @@ class MainVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     @IBAction func buyNowButtonPressed(_ sender: UIButton) {
-        
+        successView.isHidden = false
     }
 }
 
