@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		785F4E241E6ADB82006E7205 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4E231E6ADB82006E7205 /* AppDelegate.swift */; };
-		785F4E261E6ADB82006E7205 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4E251E6ADB82006E7205 /* ViewController.swift */; };
+		785F4E261E6ADB82006E7205 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F4E251E6ADB82006E7205 /* MainVC.swift */; };
 		785F4E291E6ADB82006E7205 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785F4E271E6ADB82006E7205 /* Main.storyboard */; };
 		785F4E2B1E6ADB82006E7205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 785F4E2A1E6ADB82006E7205 /* Assets.xcassets */; };
 		785F4E2E1E6ADB82006E7205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785F4E2C1E6ADB82006E7205 /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		785F4E201E6ADB82006E7205 /* MiraclePills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiraclePills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		785F4E231E6ADB82006E7205 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		785F4E251E6ADB82006E7205 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		785F4E251E6ADB82006E7205 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		785F4E281E6ADB82006E7205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		785F4E2A1E6ADB82006E7205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		785F4E2D1E6ADB82006E7205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 		785F4E531E6ADBBD006E7205 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				785F4E251E6ADB82006E7205 /* ViewController.swift */,
+				785F4E251E6ADB82006E7205 /* MainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				785F4E261E6ADB82006E7205 /* ViewController.swift in Sources */,
+				785F4E261E6ADB82006E7205 /* MainVC.swift in Sources */,
 				785F4E241E6ADB82006E7205 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +538,7 @@
 				785F4E4A1E6ADB83006E7205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		785F4E4B1E6ADB83006E7205 /* Build configuration list for PBXNativeTarget "MiraclePillsTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +547,7 @@
 				785F4E4D1E6ADB83006E7205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		785F4E4E1E6ADB83006E7205 /* Build configuration list for PBXNativeTarget "MiraclePillsUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +556,7 @@
 				785F4E501E6ADB83006E7205 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
