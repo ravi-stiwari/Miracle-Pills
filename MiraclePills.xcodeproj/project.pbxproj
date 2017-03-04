@@ -98,8 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				785F4E531E6ADBBD006E7205 /* Controller */,
-				785F4E521E6ADBB7006E7205 /* Model */,
-				785F4E511E6ADBAD006E7205 /* View */,
 				785F4E231E6ADB82006E7205 /* AppDelegate.swift */,
 				785F4E271E6ADB82006E7205 /* Main.storyboard */,
 				785F4E2A1E6ADB82006E7205 /* Assets.xcassets */,
@@ -125,20 +123,6 @@
 				785F4E451E6ADB83006E7205 /* Info.plist */,
 			);
 			path = MiraclePillsUITests;
-			sourceTree = "<group>";
-		};
-		785F4E511E6ADBAD006E7205 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		785F4E521E6ADBB7006E7205 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		785F4E531E6ADBBD006E7205 /* Controller */ = {
